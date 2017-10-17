@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         ludo.cpp \
-    home.cpp
+    home.cpp \
+    tile.cpp
 
 HEADERS += \
         ludo.h \
-    home.h
+    home.h \
+    tile.h
 
 FORMS += \
         ludo.ui \
