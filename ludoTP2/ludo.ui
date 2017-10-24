@@ -82,7 +82,7 @@
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="tile46">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -104,7 +104,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="tile47">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -126,7 +126,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="2">
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="tile00">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -148,7 +148,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_4">
+           <widget class="QPushButton" name="tile45">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -170,7 +170,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QPushButton" name="pushButton_9">
+           <widget class="QPushButton" name="runRed01">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -192,7 +192,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QPushButton" name="pushButton_14">
+           <widget class="QPushButton" name="runRed00">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -214,7 +214,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QPushButton" name="tile44">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -236,7 +236,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QPushButton" name="pushButton_10">
+           <widget class="QPushButton" name="runRed02">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -258,7 +258,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="2" column="2">
-           <widget class="QPushButton" name="pushButton_15">
+           <widget class="QPushButton" name="tile01">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -280,7 +280,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="3" column="0">
-           <widget class="QPushButton" name="pushButton_6">
+           <widget class="QPushButton" name="tile43">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -302,7 +302,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QPushButton" name="pushButton_11">
+           <widget class="QPushButton" name="runRed03">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -324,7 +324,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="3" column="2">
-           <widget class="QPushButton" name="pushButton_16">
+           <widget class="QPushButton" name="tile02">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -346,7 +346,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="4" column="0">
-           <widget class="QPushButton" name="pushButton_7">
+           <widget class="QPushButton" name="tile42">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -368,7 +368,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QPushButton" name="pushButton_12">
+           <widget class="QPushButton" name="runRed04">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -390,7 +390,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="4" column="2">
-           <widget class="QPushButton" name="pushButton_17">
+           <widget class="QPushButton" name="tile03">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -412,7 +412,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="5" column="0">
-           <widget class="QPushButton" name="pushButton_8">
+           <widget class="QPushButton" name="tile41">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -434,7 +434,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="5" column="1">
-           <widget class="QPushButton" name="pushButton_13">
+           <widget class="QPushButton" name="runRed05">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -456,7 +456,7 @@ background-color: #ff3333;</string>
            </widget>
           </item>
           <item row="5" column="2">
-           <widget class="QPushButton" name="pushButton_18">
+           <widget class="QPushButton" name="tile04">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -534,7 +534,7 @@ background-color: white;</string>
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_38">
+           <widget class="QPushButton" name="tile36">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -556,7 +556,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton_40">
+           <widget class="QPushButton" name="runBlue00">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -578,7 +578,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="0" column="2">
-           <widget class="QPushButton" name="pushButton_41">
+           <widget class="QPushButton" name="tile37">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -600,7 +600,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QPushButton" name="pushButton_43">
+           <widget class="QPushButton" name="tile38">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -622,7 +622,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="4">
-           <widget class="QPushButton" name="pushButton_42">
+           <widget class="QPushButton" name="tile39">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -644,7 +644,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QPushButton" name="pushButton_44">
+           <widget class="QPushButton" name="tile40">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -666,7 +666,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_37">
+           <widget class="QPushButton" name="tile35">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -688,7 +688,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QPushButton" name="pushButton_50">
+           <widget class="QPushButton" name="runBlue01">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -710,7 +710,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QPushButton" name="pushButton_51">
+           <widget class="QPushButton" name="runBlue02">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -732,7 +732,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="1" column="3">
-           <widget class="QPushButton" name="pushButton_52">
+           <widget class="QPushButton" name="runBlue03">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -754,7 +754,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="1" column="4">
-           <widget class="QPushButton" name="pushButton_53">
+           <widget class="QPushButton" name="runBlue04">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -776,7 +776,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="1" column="5">
-           <widget class="QPushButton" name="pushButton_54">
+           <widget class="QPushButton" name="runTile05">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -798,7 +798,7 @@ background-color: #3333ff;</string>
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QPushButton" name="pushButton_39">
+           <widget class="QPushButton" name="tile34">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -820,7 +820,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QPushButton" name="pushButton_45">
+           <widget class="QPushButton" name="tile33">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -842,7 +842,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="2">
-           <widget class="QPushButton" name="pushButton_46">
+           <widget class="QPushButton" name="tile32">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -864,7 +864,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="3">
-           <widget class="QPushButton" name="pushButton_47">
+           <widget class="QPushButton" name="tile31">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -886,7 +886,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="4">
-           <widget class="QPushButton" name="pushButton_48">
+           <widget class="QPushButton" name="tile30">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -908,7 +908,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="5">
-           <widget class="QPushButton" name="pushButton_49">
+           <widget class="QPushButton" name="tile29">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -959,7 +959,7 @@ background-color: white;</string>
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_55">
+           <widget class="QPushButton" name="tile05">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -981,7 +981,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton_56">
+           <widget class="QPushButton" name="tile06">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1003,7 +1003,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="2">
-           <widget class="QPushButton" name="pushButton_57">
+           <widget class="QPushButton" name="tile07">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1025,7 +1025,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="QPushButton" name="pushButton_58">
+           <widget class="QPushButton" name="tile08">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1047,7 +1047,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="4">
-           <widget class="QPushButton" name="pushButton_59">
+           <widget class="QPushButton" name="tile09">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1069,7 +1069,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="5">
-           <widget class="QPushButton" name="pushButton_60">
+           <widget class="QPushButton" name="tile10">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1091,7 +1091,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_61">
+           <widget class="QPushButton" name="runGreen05">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1113,7 +1113,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QPushButton" name="pushButton_62">
+           <widget class="QPushButton" name="runGreen04">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1135,7 +1135,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QPushButton" name="pushButton_63">
+           <widget class="QPushButton" name="runGreen03">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1157,7 +1157,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="1" column="3">
-           <widget class="QPushButton" name="pushButton_64">
+           <widget class="QPushButton" name="runGreen02">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1179,7 +1179,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="1" column="4">
-           <widget class="QPushButton" name="pushButton_65">
+           <widget class="QPushButton" name="runGreen01">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1201,7 +1201,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="1" column="5">
-           <widget class="QPushButton" name="pushButton_66">
+           <widget class="QPushButton" name="tile11">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1223,7 +1223,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QPushButton" name="pushButton_67">
+           <widget class="QPushButton" name="tile16">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1245,7 +1245,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QPushButton" name="pushButton_68">
+           <widget class="QPushButton" name="tile15">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1267,7 +1267,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="2">
-           <widget class="QPushButton" name="pushButton_69">
+           <widget class="QPushButton" name="tile14">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1289,7 +1289,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="3">
-           <widget class="QPushButton" name="pushButton_70">
+           <widget class="QPushButton" name="tile13">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1311,7 +1311,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="4">
-           <widget class="QPushButton" name="pushButton_71">
+           <widget class="QPushButton" name="runGreen00">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1333,7 +1333,7 @@ background-color: #33ff33;</string>
            </widget>
           </item>
           <item row="2" column="5">
-           <widget class="QPushButton" name="pushButton_72">
+           <widget class="QPushButton" name="tile12">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1411,7 +1411,7 @@ background-color: white;</string>
            <number>0</number>
           </property>
           <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_19">
+           <widget class="QPushButton" name="tile28">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1433,7 +1433,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="pushButton_20">
+           <widget class="QPushButton" name="runYellow05">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1455,7 +1455,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="0" column="2">
-           <widget class="QPushButton" name="pushButton_21">
+           <widget class="QPushButton" name="tile17">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1477,7 +1477,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_22">
+           <widget class="QPushButton" name="tile27">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1499,7 +1499,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QPushButton" name="pushButton_23">
+           <widget class="QPushButton" name="runYellow04">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1521,7 +1521,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QPushButton" name="pushButton_24">
+           <widget class="QPushButton" name="tile18">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1543,7 +1543,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QPushButton" name="pushButton_25">
+           <widget class="QPushButton" name="tile26">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1565,7 +1565,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QPushButton" name="pushButton_26">
+           <widget class="QPushButton" name="runYellow03">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1587,7 +1587,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="2" column="2">
-           <widget class="QPushButton" name="pushButton_27">
+           <widget class="QPushButton" name="tile19">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1609,7 +1609,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="3" column="0">
-           <widget class="QPushButton" name="pushButton_28">
+           <widget class="QPushButton" name="tile25">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1631,7 +1631,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QPushButton" name="pushButton_29">
+           <widget class="QPushButton" name="runYellow02">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1653,7 +1653,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="3" column="2">
-           <widget class="QPushButton" name="pushButton_30">
+           <widget class="QPushButton" name="tile20">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1675,7 +1675,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="4" column="0">
-           <widget class="QPushButton" name="pushButton_31">
+           <widget class="QPushButton" name="runYellow00">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1697,7 +1697,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QPushButton" name="pushButton_32">
+           <widget class="QPushButton" name="runYellow01">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1719,7 +1719,7 @@ background-color: #ffff33;</string>
            </widget>
           </item>
           <item row="4" column="2">
-           <widget class="QPushButton" name="pushButton_33">
+           <widget class="QPushButton" name="tile21">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1741,7 +1741,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="5" column="0">
-           <widget class="QPushButton" name="pushButton_34">
+           <widget class="QPushButton" name="tile24">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1763,7 +1763,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="5" column="1">
-           <widget class="QPushButton" name="pushButton_35">
+           <widget class="QPushButton" name="tile23">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1785,7 +1785,7 @@ background-color: white;</string>
            </widget>
           </item>
           <item row="5" column="2">
-           <widget class="QPushButton" name="pushButton_36">
+           <widget class="QPushButton" name="tile22">
             <property name="minimumSize">
              <size>
               <width>25</width>
@@ -1855,51 +1855,6 @@ background-color: white;</string>
      </layout>
     </item>
    </layout>
-   <zorder>widget_2</zorder>
-   <zorder>widget_5</zorder>
-   <zorder>widget_3</zorder>
-   <zorder>widget</zorder>
-   <zorder>widget_7</zorder>
-   <zorder>widget_9</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>pushButton_8</zorder>
-   <zorder>pushButton_9</zorder>
-   <zorder>pushButton_10</zorder>
-   <zorder>pushButton_11</zorder>
-   <zorder>pushButton_12</zorder>
-   <zorder>pushButton_13</zorder>
-   <zorder>pushButton_14</zorder>
-   <zorder>pushButton_15</zorder>
-   <zorder>pushButton_16</zorder>
-   <zorder>pushButton_17</zorder>
-   <zorder>pushButton_18</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>pushButton_37</zorder>
-   <zorder>pushButton_38</zorder>
-   <zorder>pushButton_39</zorder>
-   <zorder>pushButton_40</zorder>
-   <zorder>pushButton_41</zorder>
-   <zorder>pushButton_42</zorder>
-   <zorder>pushButton_43</zorder>
-   <zorder>pushButton_45</zorder>
-   <zorder>pushButton_49</zorder>
-   <zorder>pushButton_50</zorder>
-   <zorder>pushButton_51</zorder>
-   <zorder>pushButton_52</zorder>
-   <zorder>pushButton_54</zorder>
-   <zorder>pushButton_44</zorder>
-   <zorder>pushButton_46</zorder>
-   <zorder>pushButton_47</zorder>
-   <zorder>pushButton_48</zorder>
-   <zorder>pushButton_53</zorder>
-   <zorder>layoutWidget_2</zorder>
-   <zorder>pushButton_73</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

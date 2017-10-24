@@ -328,7 +328,7 @@ background-color: white;</string>
             <number>0</number>
            </property>
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="home1">
              <property name="minimumSize">
               <size>
                <width>25</width>
@@ -372,7 +372,7 @@ background-color: white;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="home3">
              <property name="minimumSize">
               <size>
                <width>25</width>
@@ -423,7 +423,7 @@ background-color: white;</string>
             <number>0</number>
            </property>
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="home2">
              <property name="minimumSize">
               <size>
                <width>25</width>
@@ -467,7 +467,7 @@ background-color: white;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="home4">
              <property name="minimumSize">
               <size>
                <width>25</width>
@@ -775,37 +775,6 @@ background-color: transparent;</string>
     </layout>
    </item>
   </layout>
-  <zorder>label_7</zorder>
-  <zorder>label_8</zorder>
-  <zorder>label_9</zorder>
-  <zorder>label_10</zorder>
-  <zorder>label_12</zorder>
-  <zorder>label_13</zorder>
-  <zorder>label_14</zorder>
-  <zorder>label_15</zorder>
-  <zorder>label_17</zorder>
-  <zorder>label_18</zorder>
-  <zorder>label_19</zorder>
-  <zorder>label_20</zorder>
-  <zorder>label_21</zorder>
-  <zorder>label_23</zorder>
-  <zorder>label_24</zorder>
-  <zorder>label_22</zorder>
-  <zorder>label_25</zorder>
-  <zorder>label_26</zorder>
-  <zorder>label_27</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>pushButton_2</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_11</zorder>
-  <zorder>label_16</zorder>
  </widget>
  <resources/>
  <connections/>
