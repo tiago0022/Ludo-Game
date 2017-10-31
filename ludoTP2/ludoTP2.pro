@@ -27,13 +27,18 @@ SOURCES += \
         main.cpp \
         ludo.cpp \
     home.cpp \
+    tile.cpp \
     tile.cpp
 
 HEADERS += \
         ludo.h \
     home.h \
+    tile.h \
     tile.h
 
 FORMS += \
         ludo.ui \
     home.ui
+
+RESOURCES += \
+    resources/images/resources.qrc

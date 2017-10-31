@@ -1,17 +1,25 @@
 #ifndef TILE_H
 #define TILE_H
 
-#include <QPushButton>
+#include <QWidget>
 
-class Tile : public QPushButton
+class Tile : public QWidget
 {
     Q_OBJECT
+    Q_PROPERTY(bool safe READ safe WRITE setSafe)
+
 public:
-    explicit Tile(QWidget *parent = nullptr);
+    explicit Tile(QWidget *parent = 0);
     virtual ~Tile();
+
+    bool safe() const { return m_safe;}
+    void setSafe(bool safe);
+
 signals:
 
 public slots:
-};
+
+private:
+    bool m_safe;
 
 #endif // TILE_H

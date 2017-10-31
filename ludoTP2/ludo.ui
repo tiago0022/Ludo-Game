@@ -211,6 +211,9 @@ border-style: solid;
 border-color: black;
 background-color: #ff3333;</string>
             </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item row="2" column="0">
@@ -574,6 +577,9 @@ background-color: white;</string>
 border-style: solid;
 border-color: black;
 background-color: #3333ff;</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -1330,6 +1336,9 @@ border-style: solid;
 border-color: black;
 background-color: #33ff33;</string>
             </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item row="2" column="5">
@@ -1693,6 +1702,9 @@ background-color: white;</string>
 border-style: solid;
 border-color: black;
 background-color: #ffff33;</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
             </property>
            </widget>
           </item>

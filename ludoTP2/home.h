@@ -15,6 +15,7 @@ public:
     explicit Home(QWidget *parent = 0);
     ~Home();
 
+        void setPlayer(int p);
 private:
     Ui::Home *ui;
 };
