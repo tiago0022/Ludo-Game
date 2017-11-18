@@ -52,6 +52,8 @@ void Home::removePawn(int n) {
 }
 
 void Home::handlePawn() {
+    //verifica qual dos botoes home o  cara apertou
+    //se tiver peao nele, emite sinal para
     int n;
     QPushButton* b =
         qobject_cast<QPushButton*>(QObject::sender());
@@ -69,5 +71,11 @@ void Home::handlePawn() {
     }
 
     if (m_pawns[n].has)
-        emit pawnSelected(n);
+        emit pawnSelected(n,homeColor);
+        // pawnSelected chama a função handleHome da classe Ludo
+        //passando como parametro o num do botao clicado
+}
+
+void Home::setHomeColor(int color){
+    this->homeColor = color;
 }

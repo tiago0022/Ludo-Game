@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PlayerInfo_t {
-    QByteArrayData data[2];
-    char stringdata[15];
+    QByteArrayData data[4];
+    char stringdata[27];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,9 +30,11 @@ struct qt_meta_stringdata_PlayerInfo_t {
 static const qt_meta_stringdata_PlayerInfo_t qt_meta_stringdata_PlayerInfo = {
     {
 QT_MOC_LITERAL(0, 0, 10),
-QT_MOC_LITERAL(1, 11, 2)
+QT_MOC_LITERAL(1, 11, 10),
+QT_MOC_LITERAL(2, 22, 0),
+QT_MOC_LITERAL(3, 23, 2)
     },
-    "PlayerInfo\0id\0"
+    "PlayerInfo\0changeTurn\0\0id\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -42,25 +44,43 @@ static const uint qt_meta_data_PlayerInfo[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
-       1,   14, // properties
+       1,   14, // methods
+       1,   22, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    1,   19,    2, 0x06,
+
+ // signals: parameters
+    QMetaType::Void, QMetaType::Int,    2,
 
  // properties: name, type, flags
-       1, QMetaType::Int, 0x00095103,
+       3, QMetaType::Int, 0x00095103,
 
        0        // eod
 };
 
 void PlayerInfo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        PlayerInfo *_t = static_cast<PlayerInfo *>(_o);
+        switch (_id) {
+        case 0: _t->changeTurn((*reinterpret_cast< int(*)>(_a[1]))); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        void **func = reinterpret_cast<void **>(_a[1]);
+        {
+            typedef void (PlayerInfo::*_t)(int );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&PlayerInfo::changeTurn)) {
+                *result = 0;
+            }
+        }
+    }
 }
 
 const QMetaObject PlayerInfo::staticMetaObject = {
@@ -87,9 +107,17 @@ int PlayerInfo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
-    
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 1;
+    }
 #ifndef QT_NO_PROPERTIES
-     if (_c == QMetaObject::ReadProperty) {
+      else if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast< int*>(_v) = id(); break;
@@ -120,5 +148,12 @@ int PlayerInfo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     }
 #endif // QT_NO_PROPERTIES
     return _id;
+}
+
+// SIGNAL 0
+void PlayerInfo::changeTurn(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

@@ -56,15 +56,15 @@ static const uint qt_meta_data_Home[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   34,    2, 0x06,
+       1,    2,   34,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-       3,    1,   37,    2, 0x0a,
-       5,    0,   40,    2, 0x0a,
-       6,    0,   41,    2, 0x08,
+       3,    1,   39,    2, 0x0a,
+       5,    0,   42,    2, 0x0a,
+       6,    0,   43,    2, 0x08,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    2,    2,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    4,
@@ -79,7 +79,7 @@ void Home::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     if (_c == QMetaObject::InvokeMetaMethod) {
         Home *_t = static_cast<Home *>(_o);
         switch (_id) {
-        case 0: _t->pawnSelected((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->pawnSelected((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         case 1: _t->removePawn((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 2: _t->reset(); break;
         case 3: _t->handlePawn(); break;
@@ -89,7 +89,7 @@ void Home::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (Home::*_t)(int );
+            typedef void (Home::*_t)(int , int );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Home::pawnSelected)) {
                 *result = 0;
             }
@@ -134,9 +134,9 @@ int Home::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Home::pawnSelected(int _t1)
+void Home::pawnSelected(int _t1, int _t2)
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

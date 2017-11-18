@@ -13,6 +13,7 @@ class Home : public QWidget {
 
 public:
     explicit Home(QWidget *parent = 0);
+    void setHomeColor(int color);
     ~Home();
 
     void setPlayer(int p);
@@ -22,7 +23,7 @@ public slots:
     void reset();
 
 signals:
-    void pawnSelected(int);
+    void pawnSelected(int,int);
 
 private:
     Ui::Home *ui;
@@ -30,7 +31,8 @@ private:
     struct {
         bool has;
         QPushButton* button;
-    } m_pawns[4];
+    } m_pawns[4]; //casinha dos peoes
+    int homeColor;
 
 private slots:
     void handlePawn();

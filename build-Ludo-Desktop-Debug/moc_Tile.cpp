@@ -46,20 +46,20 @@ static const uint qt_meta_data_Tile[] = {
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
-       1,   26, // properties
+       1,   28, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x06,
+       1,    1,   24,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-       3,    0,   25,    2, 0x08,
+       3,    0,   27,    2, 0x08,
 
  // signals: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    2,
 
  // slots: parameters
     QMetaType::Void,
@@ -75,7 +75,7 @@ void Tile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     if (_c == QMetaObject::InvokeMetaMethod) {
         Tile *_t = static_cast<Tile *>(_o);
         switch (_id) {
-        case 0: _t->movePawn(); break;
+        case 0: _t->movePawn((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 1: _t->handlePawn(); break;
         default: ;
         }
@@ -83,13 +83,12 @@ void Tile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (Tile::*_t)();
+            typedef void (Tile::*_t)(int );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Tile::movePawn)) {
                 *result = 0;
             }
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObject Tile::staticMetaObject = {
@@ -160,8 +159,9 @@ int Tile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Tile::movePawn()
+void Tile::movePawn(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

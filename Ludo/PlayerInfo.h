@@ -26,6 +26,11 @@ private:
     int m_id;
     bool m_turn;
 
+signals:
+    void changeTurn(int); //sinal emitido toda vez
+    //que mudar de vez,envia o id do jogador novo
+
+
 };
 
 #endif // PLAYERINFO_H

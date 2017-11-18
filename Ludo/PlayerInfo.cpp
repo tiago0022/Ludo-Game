@@ -1,5 +1,6 @@
 #include "PlayerInfo.h"
 #include "ui_PlayerInfo.h"
+#include <QDebug>
 
 PlayerInfo::PlayerInfo(QWidget *parent) :
     QWidget(parent),
@@ -43,5 +44,8 @@ void PlayerInfo::setTurn(bool turn) {
         ui->turn->setPixmap(
             turn ? QPixmap(":/others/dot") :
                    QPixmap());
+        emit changeTurn(m_id);
+//        qDebug() << "troca de vez";
+        // ligar esse sinal a um handleTurn no Ludo.cpp
     }
 }

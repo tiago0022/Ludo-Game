@@ -15,22 +15,32 @@ class Ludo : public QMainWindow {
 public:
     explicit Ludo(QWidget *parent = 0);
     virtual ~Ludo();
+    void gameData(int pawnID,int currentPlayer);
 
-//signals:
+signals:
+    void rollDiceAgain(bool play); //sinal emitido toda vez que o jogador fizer uma jogada
 //    void redFinished();
 
 private:
     Ui::Ludo *ui;
-    QList<Tile*> m_tiles;
-    QList<QPushButton*> m_redrun;
-    int m_pos;
-    int m_dice;
+    QList<Tile*> m_tiles; //Lista de casas
+    QList<QPushButton*> m_redrun; // lista de casas onde os peoes ficam inicialmente
+    QList<QPushButton*> m_yellowrun;
+    int m_pos; //posição do peão
+    int m_dice; // valor do dado
+    bool playAgain;
+    bool availableMovement; //indica se o jogador jogou o dado ou não
+    int movements;
+    int currentPlayer; //toda vez que der um set turn, mudar essa valor
+    bool hasPawnsOntiles;
 
 private slots:
     void handleDice(int n);
-    void handleHome(int n);
-    void handlePlay();
+    void handleHome(int n,int homeColor);
+    void handlePlay(int pawnID);
     void reset();
+    void handleTurn(int n); //recebe changeTurn
+    void setAvailableMovement();
 
 };
 

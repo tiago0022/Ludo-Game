@@ -9,6 +9,7 @@ class Dice : public QPushButton {
 public:
     explicit Dice(QWidget *parent = 0);
     virtual ~Dice();
+    void setRolledDice(bool n);
 
 public slots:
     void reset();
@@ -17,9 +18,12 @@ signals:
     void roll(int n);
 
 private:
+    bool rolledDice;
+    int movements;//nao sei se vou usar isso
 
 private slots:
-    void handleClick();
+    void ableToRollAgain();
+    void handleClick(bool play);
 
 };
 
