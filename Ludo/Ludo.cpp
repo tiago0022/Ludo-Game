@@ -101,41 +101,80 @@ Ludo::~Ludo() {
 void Ludo::handleDice(int n) {
     m_dice = n; // 'n' é o valor tirado no dado
     this->availableMovement = true;
-    for(int i=0;i<52;i++){
-        if(m_tiles[i]->getPawnID() == currentPlayer){
-            this->hasPawnsOntiles = true;
+    if(currentPlayer == 1){
+        for(int i=0;i<52;i++){
+            if(m_tiles[i]->getPawnID()  == 1){
+                this->hasPawnsOntiles = true;
+                qDebug() << "tem peao vermelho nos tiles";
+                //emitir sinal contendo o currentPlayer para o dado
+            }
+        }
+
+    }else if(currentPlayer == 2){
+        for(int i=0;i<52;i++){
+            if(m_tiles[i]->getPawnID()  == 2){
+                this->hasPawnsOntiles = true;
+                qDebug() << "tem peao amarelo nos tiles";
+                //emitir sinal contendo o currentPlayer para o dado
+            }
         }
     }
-    if(n == 6 /*|| this->hasPawnsOntiles*/){
+    switch (currentPlayer) {
+    case 1:
+        if(!this->hasPawnsOntiles && n != 6){
+            this->ui->player1->setTurn(false);
+            this->ui->player2->setTurn(true);
+        }
+        break;
+    case 2:
+        if(!this->hasPawnsOntiles && n != 6){
+            this->ui->player2->setTurn(false);
+            this->ui->player1->setTurn(true);
+        }
+        break;
+    default:
+
+        break;
+    }
+    this->hasPawnsOntiles = false;
+    if(n == 6){
         this->playAgain = true;
         this->movements = 2;
 
     }
     else{
-        if(currentPlayer == 1){
-//            this->ui->player1->setTurn(false);
-//            this->ui->player2->setTurn(true);
 
-        }
-        if(currentPlayer == 2){
-//            this->ui->player1->setTurn(true);
-//            this->ui->player2->setTurn(false);
-        }
         this->playAgain = false;
         this->movements = 1;
     }
-//    this->hasPawnsOntiles = false;
     qDebug() << "Jogadas disponíveis: " << this->movements;
 
 }
 
 void Ludo::handleHome(int n,int homeColor) {
+    int index;
     if (m_dice == 6 && currentPlayer == homeColor) {
+        switch (currentPlayer) {
+        case 1://vermelho
+            index = 1;
+            break;
+        case 2://amarelo
+            index = 27;
+            break;
+        case 3://azul
+            index = 40;
+            break;
+        case 4://verde
+            index = 14;
+            break;
+        default:
+            break;
+        }
         qDebug() << "handleHome";
         Home* home =
             qobject_cast<Home*>(QObject::sender());
         home->removePawn(n);
-        m_tiles[1]->setPawn(true);
+        m_tiles[index]->setPawn(true,currentPlayer);
         qDebug() << "Jogadas disponíveis: " << --this->movements;
         ui->dice->setRolledDice(false);
         emit rollDiceAgain(true);
@@ -152,12 +191,22 @@ void Ludo::handlePlay(int pawnID) {
 
         int proximo = (anterior + m_dice) % 52;
 
-        m_tiles[anterior]->setPawn(false);
-        m_tiles[proximo]->setPawn(true);
+        m_tiles[anterior]->setPawn(false,currentPlayer);
+        m_tiles[proximo]->setPawn(true,currentPlayer);
         qDebug() << "Jogadas disponíveis: " << --this->movements;
         if(this->movements == 0){
-            ui->player1->setTurn(false);
-            ui->player2->setTurn(true);
+            switch (currentPlayer) {
+            case 1:
+                ui->player1->setTurn(false);
+                ui->player2->setTurn(true);
+                break;
+            case 2:
+                ui->player2->setTurn(false);
+                ui->player1->setTurn(true);
+                break;
+            default:
+                break;
+            }
         }
         ui->dice->setRolledDice(false);
         emit rollDiceAgain(true);
@@ -169,7 +218,7 @@ void Ludo::reset() {
     ui->dice->reset();
     ui->redhome->reset();
     for (int i = 0; i < 52; i++)
-        m_tiles[i]->setPawn(false);
+        m_tiles[i]->setPawn(false,currentPlayer);
 }
 
 void Ludo::handleTurn(int n){

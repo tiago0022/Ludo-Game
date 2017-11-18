@@ -33,6 +33,7 @@ private:
     int movements;
     int currentPlayer; //toda vez que der um set turn, mudar essa valor
     bool hasPawnsOntiles;
+    bool changeTurnOnNextRoll;
 
 private slots:
     void handleDice(int n);

@@ -18,7 +18,7 @@ public:
     void setSafe(bool safe);
 
     bool hasPawn() const { return m_pawn; }
-    void setPawn(bool pawn);
+    void setPawn(bool pawn,int currentPlayer);
 
     int getPawnID() const { return pawnID;}
 

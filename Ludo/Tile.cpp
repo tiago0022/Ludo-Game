@@ -22,12 +22,30 @@ void Tile::setSafe(bool safe) {
     m_safe = safe;
 }
 
-void Tile::setPawn(bool pawn/*,int ID*/) { //modificar para todos
+void Tile::setPawn(bool pawn,int currentPlayer) { //modificar para todos
     m_pawn = pawn;
     if (pawn) {  //se setar o peão
-        this->setIcon(QPixmap(":/pawns/red")); //coloca a imagem no peaozinho la
-        this->pawnID = 1;
-        qDebug() << "peão 1 no tile:" << this->m_pos;
+        switch (currentPlayer) {
+        case 1:
+            this->setIcon(QPixmap(":/pawns/red")); //coloca a imagem no peaozinho la
+            this->pawnID = 1;
+            break;
+        case 2:
+            this->setIcon(QPixmap(":/pawns/yellow")); //coloca a imagem no peaozinho la
+            this->pawnID = 2;
+            break;
+        case 3:
+            this->setIcon(QPixmap(":/pawns/blue")); //coloca a imagem no peaozinho la
+            this->pawnID = 3;
+            break;
+        case 4:
+            this->setIcon(QPixmap(":/pawns/green")); //coloca a imagem no peaozinho la
+            this->pawnID = 4;
+            break;
+        default:
+            break;
+        }
+        qDebug() << "peão "<< this->pawnID<<" no tile:" << this->m_pos;
     } else {
         this->setIcon(QPixmap()); //tira a imagem do peaozinho
         this->pawnID = 0;
