@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Dice_t {
-    QByteArrayData data[8];
-    char stringdata[53];
+    QByteArrayData data[10];
+    char stringdata[67];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,10 +36,12 @@ QT_MOC_LITERAL(3, 11, 1),
 QT_MOC_LITERAL(4, 13, 5),
 QT_MOC_LITERAL(5, 19, 15),
 QT_MOC_LITERAL(6, 35, 11),
-QT_MOC_LITERAL(7, 47, 4)
+QT_MOC_LITERAL(7, 47, 4),
+QT_MOC_LITERAL(8, 52, 7),
+QT_MOC_LITERAL(9, 60, 5)
     },
     "Dice\0roll\0\0n\0reset\0ableToRollAgain\0"
-    "handleClick\0play\0"
+    "handleClick\0play\0setDice\0enDis\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -49,7 +51,7 @@ static const uint qt_meta_data_Dice[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,12 +59,13 @@ static const uint qt_meta_data_Dice[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   34,    2, 0x06,
+       1,    1,   39,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,   37,    2, 0x0a,
-       5,    0,   38,    2, 0x08,
-       6,    1,   39,    2, 0x08,
+       4,    0,   42,    2, 0x0a,
+       5,    0,   43,    2, 0x08,
+       6,    1,   44,    2, 0x08,
+       8,    1,   47,    2, 0x08,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -71,6 +74,7 @@ static const uint qt_meta_data_Dice[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Bool,    7,
+    QMetaType::Void, QMetaType::Bool,    9,
 
        0        // eod
 };
@@ -84,6 +88,7 @@ void Dice::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 1: _t->reset(); break;
         case 2: _t->ableToRollAgain(); break;
         case 3: _t->handleClick((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 4: _t->setDice((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -123,13 +128,13 @@ int Dice::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

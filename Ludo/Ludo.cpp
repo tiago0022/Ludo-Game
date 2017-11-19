@@ -24,6 +24,12 @@ Ludo::Ludo(QWidget *parent) :
         m_tiles << t; //adiciona a casa a uma lista de casas
     }
 
+    QObject::connect(this,SIGNAL(enableDice(bool)),
+                     ui->dice,SLOT(setDice(bool)));
+
+    QObject::connect(this,SIGNAL(disableDice(bool)),
+                     ui->dice,SLOT(setDice(bool)));
+
     this->hasPawnsOntiles = false;
 
     ui->redhome->setHomeColor(1);
@@ -124,12 +130,24 @@ void Ludo::handleDice(int n) {
         if(!this->hasPawnsOntiles && n != 6){
             this->ui->player1->setTurn(false);
             this->ui->player2->setTurn(true);
+            //mandar sinal enable dice
+//            ui->dice->setIcon(QPixmap(
+//                                  QString(":/dices/face0")));
+            emit this->enableDice(true);
+        }
+        else{
+            emit this->disableDice(false);
         }
         break;
     case 2:
         if(!this->hasPawnsOntiles && n != 6){
             this->ui->player2->setTurn(false);
             this->ui->player1->setTurn(true);
+            // mandar sinal enable dice
+            emit this->enableDice(true);
+        }
+        else{
+            emit this->disableDice(false);
         }
         break;
     default:
@@ -153,7 +171,7 @@ void Ludo::handleDice(int n) {
 
 void Ludo::handleHome(int n,int homeColor) {
     int index;
-    if (m_dice == 6 && currentPlayer == homeColor) {
+    if (m_dice == 6 && currentPlayer == homeColor && this->movements > 0 && this->availableMovement) {
         switch (currentPlayer) {
         case 1://vermelho
             index = 1;
@@ -178,6 +196,7 @@ void Ludo::handleHome(int n,int homeColor) {
         qDebug() << "Jogadas disponíveis: " << --this->movements;
         ui->dice->setRolledDice(false);
         emit rollDiceAgain(true);
+        emit enableDice(true);
 
     }
 }
@@ -210,7 +229,7 @@ void Ludo::handlePlay(int pawnID) {
         }
         ui->dice->setRolledDice(false);
         emit rollDiceAgain(true);
-
+        emit enableDice(true);
     }
 }
 

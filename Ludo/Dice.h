@@ -18,12 +18,14 @@ signals:
     void roll(int n);
 
 private:
+    bool enable; //se pode rolar o dado ou não
     bool rolledDice;
     int movements;//nao sei se vou usar isso
 
 private slots:
     void ableToRollAgain();
     void handleClick(bool play);
+    void setDice(bool enDis);
 
 };
 

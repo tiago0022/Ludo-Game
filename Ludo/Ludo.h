@@ -18,6 +18,8 @@ public:
     void gameData(int pawnID,int currentPlayer);
 
 signals:
+    void enableDice(bool enDis);
+    void disableDice(bool enDis);
     void rollDiceAgain(bool play); //sinal emitido toda vez que o jogador fizer uma jogada
 //    void redFinished();
 
