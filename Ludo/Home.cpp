@@ -30,8 +30,15 @@ void Home::setPlayer(int p) {
         case 1:
             m_icon = QPixmap(":/pawns/yellow");
             break;
+        case 2:
+            m_icon = QPixmap(":/pawns/blue");
+            break;
+        case 3:
+            m_icon = QPixmap(":/pawns/green");
+            break;
         default:
             Q_UNREACHABLE();
+            break;
     }
 
     reset();

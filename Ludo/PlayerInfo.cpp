@@ -27,10 +27,10 @@ void PlayerInfo::setId(int id) {
             color = "#ffff33";
             break;
         case 3:
-            color = "#33ff33";
+            color = "#3333ff";
             break;
         case 4:
-            color = "#3333ff";
+            color = "#33ff33";
             break;
     }
 

@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Ludo_t {
-    QByteArrayData data[16];
-    char stringdata[145];
+    QByteArrayData data[17];
+    char stringdata[155];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -44,12 +44,14 @@ QT_MOC_LITERAL(11, 88, 10),
 QT_MOC_LITERAL(12, 99, 6),
 QT_MOC_LITERAL(13, 106, 5),
 QT_MOC_LITERAL(14, 112, 10),
-QT_MOC_LITERAL(15, 123, 20)
+QT_MOC_LITERAL(15, 123, 20),
+QT_MOC_LITERAL(16, 144, 9)
     },
     "Ludo\0enableDice\0\0enDis\0disableDice\0"
     "rollDiceAgain\0play\0handleDice\0n\0"
     "handleHome\0homeColor\0handlePlay\0pawnID\0"
     "reset\0handleTurn\0setAvailableMovement\0"
+    "handleRun\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,7 +61,7 @@ static const uint qt_meta_data_Ludo[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -67,17 +69,18 @@ static const uint qt_meta_data_Ludo[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   59,    2, 0x06,
-       4,    1,   62,    2, 0x06,
-       5,    1,   65,    2, 0x06,
+       1,    1,   64,    2, 0x06,
+       4,    1,   67,    2, 0x06,
+       5,    1,   70,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-       7,    1,   68,    2, 0x08,
-       9,    2,   71,    2, 0x08,
-      11,    1,   76,    2, 0x08,
-      13,    0,   79,    2, 0x08,
-      14,    1,   80,    2, 0x08,
-      15,    0,   83,    2, 0x08,
+       7,    1,   73,    2, 0x08,
+       9,    2,   76,    2, 0x08,
+      11,    1,   81,    2, 0x08,
+      13,    0,   84,    2, 0x08,
+      14,    1,   85,    2, 0x08,
+      15,    0,   88,    2, 0x08,
+      16,    0,   89,    2, 0x08,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Bool,    3,
@@ -90,6 +93,7 @@ static const uint qt_meta_data_Ludo[] = {
     QMetaType::Void, QMetaType::Int,   12,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    8,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -109,6 +113,7 @@ void Ludo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 6: _t->reset(); break;
         case 7: _t->handleTurn((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 8: _t->setAvailableMovement(); break;
+        case 9: _t->handleRun(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -160,13 +165,13 @@ int Ludo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 10)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }

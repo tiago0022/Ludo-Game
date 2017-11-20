@@ -45,9 +45,9 @@ void Dice::handleClick(bool play) {
         // Deveria mudar a cor de fundo para o proximo jogador.
         // Idealmente não aqui, mas usando signals/slots.
 
-        QTime dieTime= QTime::currentTime().addSecs(1);
-        while (QTime::currentTime() < dieTime)
-            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+//        QTime dieTime= QTime::currentTime().addSecs(1);
+//        while (QTime::currentTime() < dieTime)
+//            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
         emit roll(r); //emite sinal indicando que o dado foi jogado
     }
 }

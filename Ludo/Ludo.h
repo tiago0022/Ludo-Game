@@ -28,6 +28,8 @@ private:
     QList<Tile*> m_tiles; //Lista de casas
     QList<QPushButton*> m_redrun; // lista de casas onde os peoes ficam inicialmente
     QList<QPushButton*> m_yellowrun;
+    QList<QPushButton*> m_bluerun;
+    QList<QPushButton*> m_greenrun;
     int m_pos; //posição do peão
     int m_dice; // valor do dado
     bool playAgain;
@@ -35,6 +37,10 @@ private:
     int movements;
     int currentPlayer; //toda vez que der um set turn, mudar essa valor
     bool hasPawnsOntiles;
+    int redPawnsOnRuns;
+    int yellowPawnsOnRuns;
+    int bluePawnsOnRuns;
+    int greenPawnsOnRuns;
     bool changeTurnOnNextRoll;
 
 private slots:
@@ -44,6 +50,7 @@ private slots:
     void reset();
     void handleTurn(int n); //recebe changeTurn
     void setAvailableMovement();
+    void handleRun();
 
 };
 
