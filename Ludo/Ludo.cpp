@@ -344,6 +344,8 @@ void Ludo::handlePlay(int pawnID) {
         int anterior = t->pos();
 
         int proximo = (anterior + m_dice);
+        while(m_tiles[proximo % 52]->hasPawn())
+            proximo = (proximo + 1);
         switch (currentPlayer) {
 
         case 1:
@@ -359,8 +361,6 @@ void Ludo::handlePlay(int pawnID) {
                 }
             }else{
                 proximo = proximo % 52;
-                while(m_tiles[proximo]->hasPawn())
-                    proximo = (proximo + 1) % 52;
                 m_tiles[proximo]->setPawn(true,currentPlayer);
             }
         break;
@@ -378,8 +378,6 @@ void Ludo::handlePlay(int pawnID) {
                 }
             }else{
                 proximo = proximo % 52;
-                while(m_tiles[proximo]->hasPawn())
-                    proximo = (proximo + 1) % 52;
                 m_tiles[proximo]->setPawn(true,currentPlayer);
             }
             break;
@@ -397,8 +395,6 @@ void Ludo::handlePlay(int pawnID) {
                 }
             }else{
                 proximo = proximo % 52;
-                while(m_tiles[proximo]->hasPawn())
-                    proximo = (proximo + 1) % 52;
                 m_tiles[proximo]->setPawn(true,currentPlayer);
 //                m_tiles[proximo]->setPawn(true,currentPlayer);
             }
@@ -417,8 +413,6 @@ void Ludo::handlePlay(int pawnID) {
                 }
             }else{
                 proximo = proximo % 52;
-                while(m_tiles[proximo]->hasPawn())
-                        proximo = (proximo + 1) % 52;
                 m_tiles[proximo]->setPawn(true,currentPlayer);
             }
             break;
